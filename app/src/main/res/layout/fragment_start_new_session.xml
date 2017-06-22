@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boat">
+
+    <Button
+        android:text="START"
+        android:layout_height="108dp"
+        android:id="@+id/start_button"
+        android:gravity="center"
+        android:background="@drawable/bg_circle"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="bottom|right|center"
+        android:layout_width="108dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+</FrameLayout>

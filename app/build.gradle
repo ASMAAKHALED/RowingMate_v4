@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25'
+    defaultConfig {
+        applicationId "info.android.rowing"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+
+    mavenCentral() //jcenter() works as well because it pulls from Maven Central
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+
+
+    })
+    compile 'com.android.support:appcompat-v7:24.0.0-beta1'
+    compile 'com.android.support:design:24.0.0-beta1'
+    compile 'com.android.support:support-v4:24.0.0-beta1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-maps:10.2.1'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    // Glide image library
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile files('libs/GraphView-4.2.1.jar')
+    //firebase compilers
+
+    compile 'com.google.firebase:firebase-auth:10.2.0'//
+    compile 'com.google.firebase:firebase-database:10.2.1'//
+    //compile 'com.firebaseui:firebase-ui-auth:1.2.0'
+
+   // compile 'com.firebaseui:firebase-ui-auth:1.2.0'
+//    compile 'com.firebaseui:firebase-ui-auth:0.4.1'
+    //compile 'com.firebaseui:firebase-ui-auth:1.2.0'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

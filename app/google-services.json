@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "154634697170",
+    "firebase_url": "https://rowing-c2c0d.firebaseio.com",
+    "project_id": "rowing-c2c0d",
+    "storage_bucket": "rowing-c2c0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154634697170:android:315b9fe3bce93a51",
+        "android_client_info": {
+          "package_name": "info.android.rowing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154634697170-regim5vtica5tcillbmdqh77c8v5ga86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.android.rowing",
+            "certificate_hash": "9cdd91a7a4014c5a5dee344e4243c2e98b3d17ca"
+          }
+        },
+        {
+          "client_id": "154634697170-2vlk993mdb61jg541ne1mvspeetu63b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8TQ5Ic6DMHLKjGpCGplY_jWXfqfY7Ipc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154634697170-2vlk993mdb61jg541ne1mvspeetu63b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
